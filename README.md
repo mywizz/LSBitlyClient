@@ -54,3 +54,4 @@ LSBitlyClient supports two endpoints (for now):
 
 ## License
 
+Available under the MIT license.
