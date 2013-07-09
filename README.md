@@ -13,13 +13,13 @@ LSBitlyClient is simple object-c library for Bitly API.
 
 LSBitlyClient supports two endpoints (for now): 
 
-- OAuth Basic Authorization `/oauth/access_token`
+- OAuth Basic Authentication `/oauth/access_token`
 - Shorten `/v3/shorten`
 
 
 ## Usage
 	
-### OAuth Basic Authorization
+### OAuth Basic Authentication
 	
 	LSBitlyClient *bitly = [[LSBitlyClient alloc] initWithClientID:CLIENT_ID secret:CLIENT_SECRET];
 	
