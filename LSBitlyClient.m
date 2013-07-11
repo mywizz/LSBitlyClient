@@ -26,6 +26,10 @@ NSString * const BITLY_API_ENDPOINT = @"https://api-ssl.bitly.com";
 NSString * const BITLY_ERROR_DOMAIN = @"com.bitly.API";
 
 
+#define kBitlyOriginalURLKeyName	@"originalURL"
+#define kBitlyShortURLKeyName		@"shortURL"
+
+
 #import "LSBitlyClient.h"
 #import "AFNetworking.h"
 
@@ -104,8 +108,8 @@ NSString * const BITLY_ERROR_DOMAIN = @"com.bitly.API";
 			NSString *shortURL = [data valueForKey:@"url"];
 			
 			NSDictionary *result = [NSDictionary dictionaryWithObjectsAndKeys:
-									url, @"originalURL",
-									shortURL, @"shortURL",
+									url, kBitlyOriginalURLKeyName,
+									shortURL, kBitlyShortURLKeyName,
 									nil];
 			
 			successBlock(result);
